@@ -1,0 +1,83 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body, html {
+      font-family: sans-serif;
+      background-color: #f6f4e4;
+    }
+    
+    .topo {
+      background-image: url('imagem-topo.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    
+    .topo h1 {
+      font-size: 2.5rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
+    
+    .paragrafos {
+      background-color: #c8f10c;
+      padding: 30px 20px;
+    }
+    
+    .paragrafos p {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    
+    .lista {
+      background-color: #f3e9c5;
+      padding: 30px 20px;
+    }
+    
+    .interactive-list {
+      list-style: none;
+    }
+    
+    .interactive-list li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 1.1rem;
+    }
+    
+    .interactive-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 12px;
+      height: 12px;
+      background-color: #000;
+      border-radius: 50%;
+    }
+    
+    .interactive-list li::after {
+      content: '';
+      position: absolute;
+      left: 5px;
+      top: 20px;
+      width: 2px;
+      height: 30px;
+      background-color: #000;
+    }
+    
+    .interactive-list li:last-child::after {
+      display: none;
+    }
+    
+    .interactive-list li:hover {
+      color: #0077ff;
+      transform: translateX(5px);
+    }
